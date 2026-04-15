@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const material1 = new THREE.MeshBasicMaterial({map: texture1});
   const plane1 = new THREE.Mesh(geometry1, material1);
 
-  const video2 = await loadVideo("./assets/videos/Doctor scary face.mp4");
-  const texture2 = new THREE.VideoTexture(video2);
-  const geometry2 = new THREE.PlaneGeometry(1, 240/428);
-  const material2 = new THREE.MeshBasicMaterial({map: texture2});
-  const plane2 = new THREE.Mesh(geometry2, material2);
+  //const video2 = await loadVideo("./assets/videos/Doctor scary face.mp4");
+  //const texture2 = new THREE.VideoTexture(video2);
+  //const geometry2 = new THREE.PlaneGeometry(1, 240/428);
+  //const material2 = new THREE.MeshBasicMaterial({map: texture2});
+  //const plane2 = new THREE.Mesh(geometry2, material2);
 
 
   // add the first video plane to an anchor
@@ -42,16 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
    
   // add the second video plane to an anchor
-  const anchor2 = mindarThree.addAnchor(1);
-  anchor2.group.add(plane2);
+  //const anchor2 = mindarThree.addAnchor(1);
+ // anchor2.group.add(plane2);
 
-  anchor2.onTargetFound = () => {
-    //console.log('Video 2 started');
-    video2.play();
-  }
-  anchor2.onTargetLost = () => {
-    video2.pause();
-  }
+  //anchor2.onTargetFound = () => {
+   // //console.log('Video 2 started');
+   // video2.play();
+//  }
+  //anchor2.onTargetLost = () => {
+ //   video2.pause();
+//  }
 //start the experience
     await mindarThree.start();
     renderer.setAnimationLoop(() => {
