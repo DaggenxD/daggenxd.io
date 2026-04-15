@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //initiate the AR 3 object
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: './assets/targets/targets_test.mind'
+      imageTargetSrc: './assets/targets/targets_new.mind'
     });
     const {renderer, scene, camera} = mindarThree;
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //scene.add(light);
 
      // load and create the first video plane
-  const video1 = await loadVideo("./assets/videos/Video Senha.webm");
+  const video1 = await loadVideo("./assets/videos/Mapa Olavo.webm");
   const texture1 = new THREE.VideoTexture(video1);
   const geometry1 = new THREE.PlaneGeometry(1, 240/428);
   const material1 = new THREE.MeshBasicMaterial({map: texture1});
