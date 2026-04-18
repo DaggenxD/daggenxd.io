@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const video2 = await loadVideo("./assets/videos/Video Cena Lazer.mp4");
   const texture2 = new THREE.VideoTexture(video2);
-  const geometry2 = new THREE.PlaneGeometry(1, 3/4); // Cena Lazer 
+  const geometry2 = new THREE.PlaneGeometry(1, 1);
+  plane2.scale.set(1, 3/4, 1);
   const material2 = new THREE.MeshBasicMaterial({map: texture2});
   const plane2 = new THREE.Mesh(geometry2, material2);
 
