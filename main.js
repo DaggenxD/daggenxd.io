@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const video2 = await loadVideo("./assets/videos/Video Cena Lazer.mp4");
   const texture2 = new THREE.VideoTexture(video2);
-  const geometry2 = new THREE.PlaneGeometry(1, 1); // Cena Lazer 900x900
+  const geometry2 = new THREE.PlaneGeometry(1, 3/4); // Cena Lazer 
   const material2 = new THREE.MeshBasicMaterial({map: texture2});
   const plane2 = new THREE.Mesh(geometry2, material2);
 
   const video3 = await loadVideo("./assets/videos/Video Cena Frontal - Compress.mp4");
   const texture3 = new THREE.VideoTexture(video3);
-  const geometry3 = new THREE.PlaneGeometry(1, 1); // Cena Frontal 900x900
+  const geometry3 = new THREE.PlaneGeometry(1, 3/4); // Cena Frontal 
   const material3 = new THREE.MeshBasicMaterial({map: texture3});
   const plane3 = new THREE.Mesh(geometry3, material3);
 
