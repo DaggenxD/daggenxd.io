@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
    //add the third video plane to an anchor
-  const anchor3 = mindarThree.addAnchor(1);
+  const anchor3 = mindarThree.addAnchor(2);
   anchor3.group.add(plane3);
 
   anchor3.onTargetFound = () => {
