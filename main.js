@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const video3 = await loadVideo("./assets/videos/Video Cena Frontal - Compress.mp4");
   const texture3 = new THREE.VideoTexture(video3);
-  const geometry3 = new THREE.PlaneGeometry(1, 3/4); // Cena Frontal 
+  const geometry3 = new THREE.PlaneGeometry(1, 1); // Cena Frontal 
+  plane3.scale.set(1, 3/4, 1);
   const material3 = new THREE.MeshBasicMaterial({map: texture3});
   const plane3 = new THREE.Mesh(geometry3, material3);
 
