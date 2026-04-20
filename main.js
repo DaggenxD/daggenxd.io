@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const {renderer, scene, camera} = mindarThree;
  
     // load and create the first video plane
-    const video1 = await loadVideo("./assets/videos/Mapa Olavo Menor.mp4");
+    const video1 = await loadVideo("./assets/videos/Mapa_Olavo_Menor_sem_audio.mp4");
     video1.muted = true;
     const texture1 = new THREE.VideoTexture(video1);
     const geometry1 = new THREE.PlaneGeometry(1, 1);
