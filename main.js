@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //initiate the AR 3 object
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: './assets/targets/targets_3_photos.mind'
+      imageTargetSrc: './assets/targets/targets_3_photos_2.mind'
     });
     const {renderer, scene, camera} = mindarThree;
  
